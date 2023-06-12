@@ -3,7 +3,6 @@ import { Container, Typography } from "@mui/material";
 import { useState } from "react";
 import Card from "./components/Card";
 import Credits from "./components/Credits";
-
 const API_WEATHER =  `https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_API_KEY}&lang=es&q=`;
 
 export default function App() {
