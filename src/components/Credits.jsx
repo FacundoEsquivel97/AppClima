@@ -1,17 +1,17 @@
 import { Typography } from "@mui/material";
 
-      export default function Credits(){
+      export default function Credits({title, url}){
         return(
       <Typography
         textAlign="center"
         sx={{ mt: 2, fontSize: "10px" }}
       >
-        Powered by:{" "}
         <a
-          href="https://www.weatherapi.com/"
-          title="Weather API"
+          href={url}
+          title={title}
         >
-          WeatherAPI.com
+          {title}
         </a>
       </Typography>
+      
         )}

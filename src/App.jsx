@@ -85,8 +85,10 @@ export default function App() {
       {weather.city && (
         <Card weather={weather}></Card>
       )}
-
-    <Credits />
+    <Container sx={{display: "flex", gap: 1, justifyContent: "center"}}>
+    <Credits title="WeatherAPI.com" url="https://www.weatherapi.com/" />
+    <Credits title="Facundo Esquivel" url="https://facundoesquivel.netlify.app/" />
+    </Container>
     </Container>
     </>
   )
